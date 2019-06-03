@@ -17,9 +17,9 @@ body{
 
 /*  Projects
 ----------------------*/
-
-
-
+.card{
+  margin-bottom: 25px;
+}
 
 /*  Something
 ----------------------*/
