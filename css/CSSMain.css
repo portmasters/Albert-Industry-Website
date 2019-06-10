@@ -1,12 +1,16 @@
-/*  Body
-----------------------*/
+/*---body---*/
 body{
-  background-color: #343a40;
+  background-color: #41474c;
 }
 .container-fluid{
   color:white;
   background-color:#484e54;
 
+}
+
+/*---header---*/
+#boxAnimation{
+  margin-top:50px;position:relative;color:black; width:100%;background-color:#f4f8fb; height: 500px;
 }
 
 

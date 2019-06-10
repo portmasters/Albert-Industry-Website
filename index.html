@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-  <meta name = "author" content = "Albert Nguyen">
-  <meta name = "description" content = "Albert's Portfolio">
-  <meta name = "keywords" content = "HTML,CSS,XML,JavaScript">
+  <meta name="author" content="Albert Nguyen">
+  <meta name="description" content="Albert's Portfolio">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,161 +13,185 @@
 
   <title>Albert's Portfolio</title>
 
-  <link rel = "stylesheet" href = "css/CSSReset.css" >
-  <link rel = "stylesheet" href="css/bootstrap.min.css">
-  <link rel = "stylesheet" href = "css/CSSMain.css" >
+
+  <link rel="stylesheet" href="css/CSSReset.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/CSSMain.css">
+
+  <script src="js/jquery.slim.min.js" defer></script>
+  <script src="js/bootstrap.min.js" defer></script>
+  <script src="js/anime.min.js" defer></script>
+  <script src="js/jsMain.js" defer></script>
 
 </head>
-<body>
+
+<body onload="anime();">
 
 
-  <nav class = "navbar navbar-expand-sm navbar-dark bg-dark">
-    <h2 class = "d-none">Navigation</h2>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <h2 class="d-none">Navigation</h2>
 
 
 
 
     <!--navigation setup-->
-    <span class = "navbar-brand"> Albert Industry</span>
+    <span class="navbar-brand"> Albert Industry</span>
 
-    <button class = "navbar-toggler" type="button"
-    data-toggle = "collapse" data-target="#navToggle"
-    aria-controls = "navToggle" aria-expanded="false" aria-label="Navigation Toggle">
-    <span class = "navbar-toggler-icon"></span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navToggle"
+    aria-controls="navToggle" aria-expanded="false" aria-label="Navigation Toggle">
+      <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navToggle">
-      <div class = "navbar-nav">
-        <a class = "nav-item nav-link" href="#">Home</a>
-        <a class = "nav-item nav-link" href="#">About</a>
-        <a class = "nav-item nav-link" href="#">Projects</a>
-        <a class = "nav-item nav-link" href="#">Education</a>
-        <a class = "nav-item nav-link" href="#">Contact Me</a>
-      </div> <!--navbar-nav> -->
-    </div><!--collapse-->
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="#">Home</a>
+        <a class="nav-item nav-link" href="#">About</a>
+        <a class="nav-item nav-link" href="#">Projects</a>
+        <a class="nav-item nav-link" href="#">Education</a>
+        <a class="nav-item nav-link" href="#">Contact Me</a>
+      </div>
+      <!--navbar-nav> -->
+    </div>
+    <!--collapse-->
   </nav>
 
 
-<div class = "container-fluid">
-<!--header-->
-  <header>
-    <h1 style = "text-align:center;">Welcome!</h1>
-    <div style = "position:relative;color:black; width:100%;background-color:#f4f8fb; height: 500px;">
-      <div style = "text-align:center;"><h1>Animation</h1></div>
+  <div class="container-fluid">
+    <!--header-->
 
-      <div class = "progress" style = "position:absolute; bottom:0;width:100%; height:50px;">
-        <div class = "progress-bar" style = "width:5%;">5%
-        </div>
-      </div>
-    </div>
+      <!-- animation box-->
+      <div id="boxAnimation">
+        <div style="text-align:center;">
+          <h1>Welcome</h1>
+        </div><!--text-align-->
+        <svg height="100" width="100" class="help">
+          <circle cx="50" cy="50" r="40" stroke="blue" stroke-width="3" fill="blue" />
+        </svg>
+        <div class="progress" style="position:absolute; bottom:0;width:100%; height:50px;">
+          <div class="progress-bar" style="width:10%;">10%
+          </div><!-- prgoress-bar-->
+        </div><!-- progress-->
+      </div><!-- animation box-->
 
-  </header>
+    </header>
 
-<!-- BIO -->
-  <section id="bio">
-    <h2>Bio </h2>
-    <p> My name is Albert and I am a full-stack Web Application Developer and Software Developer, currently living Canada, Toronto.<br>
-      My primary focus and inspiration for my studies is software development. In my free time I like to create meaningful projects<br>
-      as a way to hone my skills. I’ve always sought out opportunities and challenges that are meaningful to me.<br>
-      <br>
-      As a web developer, I enjoy using my obsessive attention to detail, my love for creating things, and <br>
-      my mission-driven work ethic to help change the world. That's why I’m excited to make an impact at a high growth company. <br>
-    </p>
-  </section>
-<!-- END OF BIO -->
+    <!-- BIO -->
+    <section id="bio">
+      <h2>Bio </h2>
+      <p> My name is Albert and I am a full-stack Web Application Developer and Software Developer, currently living Canada, Toronto.<br>
+        My primary focus and inspiration for my studies is software development. In my free time I like to create meaningful projects<br>
+        as a way to hone my skills. I’ve always sought out opportunities and challenges that are meaningful to me.<br>
+        <br>
+        As a web developer, I enjoy using my obsessive attention to detail, my love for creating things, and <br>
+        my mission-driven work ethic to help change the world. That's why I’m excited to make an impact at a high growth company. <br>
+      </p>
+    </section>
+    <!-- END OF BIO -->
 
-<!-- PROJECTS -->
-  <section id = "projects">
-    <h2>Projects and Pictures</h2>
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Projects and Pictures</h2>
 
-    <!--PROJECT LAYOUT-->
-    <div class = "row">
+      <!--PROJECT LAYOUT-->
+      <div class="row">
 
-      <!--A CARD-->
-      <div class = "col-sm-6 col-lg-4">
-        <div class = "card bg-dark">
-          <img src = "img/project1.png" class = "card-img-top" alt = "Project Picture1">
+        <!--A CARD-->
+        <div class="col-sm-6 col-lg-4">
+          <div class="card bg-dark">
 
-          <div class = "card-body">
-            <h5 class = "card-title">PHP Self Grade Assement</h5>
-            <p class = "card-text"> Something goes here</p>
-            <a href = "#" class = "btn btn-primary">Check it out!</a>
-          </div><!--card-body-->
-        </div><!-- card-->
-      </div><!-- col-4-->
+            <img src="img/project1.PNG" class="card-img-top" alt="Project Picture1">
 
-      <!--A CARD-->
-      <div class = "col-sm-6 col-lg-4">
-        <div class = "card bg-dark">
-          <img src = "img/project1.png" class = "card-img-top" alt = "Project Picture2">
-
-          <div class = "card-body">
-            <h5 class = "card-title">PHP Self Grade Assement</h5>
-            <p class = "card-text"> Something goes here</p>
-            <a href = "#" class = "btn btn-primary">Check it out!</a>
-          </div><!--card-body-->
-        </div><!-- card-->
-      </div><!-- col-4-->
-
-      <!--A CARD-->
-      <div class = "col-sm-6 col-lg-4">
-        <div class = "card bg-dark">
-          <img src = "img/project1.png" class = "card-img-top" alt = "Project Picture3">
-
-          <div class = "card-body">
-            <h5 class = "card-title">PHP Self Grade Assement</h5>
-            <p class = "card-text"> Something goes here</p>
-            <a href = "#" class = "btn btn-primary">Check it out!</a>
-          </div><!--card-body-->
-        </div><!-- card-->
-      </div><!-- col-4-->
-
-      <!--A CARD-->
-        <div class = "col-sm-6 col-lg-4">
-          <div class = "card bg-dark">
-            <img src = "img/project1.png" class = "card-img-top" alt = "Project Picture4">
-
-            <div class = "card-body">
-              <h5 class = "card-title">PHP Self Grade Assement</h5>
-              <p class = "card-text"> Something goes here</p>
-              <a href = "#" class = "btn btn-primary">Check it out!</a>
+            <div class="card-body">
+              <h5 class="card-title">PHP Self Grade Assement</h5>
+              <p class="card-text"> Something goes here</p>
+              <a href="#" class="btn btn-primary">Check it out!</a>
             </div><!--card-body-->
+
           </div><!-- card-->
         </div><!-- col-4-->
 
-      <!--A CARD-->
-      <div class = "col-sm-6 col-lg-4">
-        <div class = "card bg-dark">
-          <img src = "img/project1.png" class = "card-img-top" alt = "Project Picture5">
+        <!--A CARD-->
+        <div class="col-sm-6 col-lg-4">
+          <div class="card bg-dark">
 
-          <div class = "card-body">
-            <h5 class = "card-title">PHP Self Grade Assement</h5>
-            <p class = "card-text"> Something goes here</p>
-            <a href = "#" class = "btn btn-primary">Check it out!</a>
-          </div><!--card-body-->
-        </div><!-- card-->
-      </div><!-- col-4-->
+            <img src="img/project1.PNG" class="card-img-top" alt="Project Picture1">
 
-    <!--A CARD-->
-      <div class = "col-sm-6 col-lg-4">
-        <div class = "card bg-dark">
-          <img src = "img/project1.png" class = "card-img-top" alt = "Project Picture6">
+            <div class="card-body">
+              <h5 class="card-title">PHP Self Grade Assement</h5>
+              <p class="card-text"> Something goes here</p>
+              <a href="#" class="btn btn-primary">Check it out!</a>
+            </div><!--card-body-->
 
-          <div class = "card-body">
-            <h5 class = "card-title">PHP Self Grade Assement</h5>
-            <p class = "card-text"> Something goes here</p>
-            <a href = "#" class = "btn btn-primary">Check it out!</a>
-          </div><!--card-body-->
-        </div><!-- card-->
-      </div><!-- col-4-->
+          </div><!-- card-->
+        </div><!-- col-4-->
 
-    </div><!-- row-->
-  </section> <!-- PROJECTS -->
+        <!--A CARD-->
+        <div class="col-sm-6 col-lg-4">
+          <div class="card bg-dark">
+
+            <img src="img/project1.PNG" class="card-img-top" alt="Project Picture1">
+
+            <div class="card-body">
+              <h5 class="card-title">PHP Self Grade Assement</h5>
+              <p class="card-text"> Something goes here</p>
+              <a href="#" class="btn btn-primary">Check it out!</a>
+            </div><!--card-body-->
+
+          </div><!-- card-->
+        </div><!-- col-4-->
+
+        <!--A CARD-->
+        <div class="col-sm-6 col-lg-4">
+          <div class="card bg-dark">
+
+            <img src="img/project1.PNG" class="card-img-top" alt="Project Picture1">
+
+            <div class="card-body">
+              <h5 class="card-title">PHP Self Grade Assement</h5>
+              <p class="card-text"> Something goes here</p>
+              <a href="#" class="btn btn-primary">Check it out!</a>
+            </div><!--card-body-->
+
+          </div><!-- card-->
+        </div><!-- col-4-->
+
+        <!--A CARD-->
+        <div class="col-sm-6 col-lg-4">
+          <div class="card bg-dark">
+
+            <img src="img/project1.PNG" class="card-img-top" alt="Project Picture1">
+
+            <div class="card-body">
+              <h5 class="card-title">PHP Self Grade Assement</h5>
+              <p class="card-text"> Something goes here</p>
+              <a href="#" class="btn btn-primary">Check it out!</a>
+            </div><!--card-body-->
+
+          </div><!-- card-->
+        </div><!-- col-4-->
+
+        <!--A CARD-->
+        <div class="col-sm-6 col-lg-4">
+          <div class="card bg-dark">
+
+            <img src="img/project1.PNG" class="card-img-top" alt="Project Picture1">
+
+            <div class="card-body">
+              <h5 class="card-title">PHP Self Grade Assement</h5>
+              <p class="card-text"> Something goes here</p>
+              <a href="#" class="btn btn-primary">Check it out!</a>
+            </div><!--card-body-->
+
+          </div><!-- card-->
+        </div><!-- col-4-->
+
+      </div><!-- row-->
+    </section> <!-- PROJECTS -->
 
 
-<!-- EDUCATION -->
-  <section id="education">
-    <h2>Education</h2>
+    <!-- EDUCATION -->
+    <section id="education">
+      <h2>Education</h2>
       <p>
         George Brown College <span> September 2015-April 2018</span><br>
         Ontario College Advanced Diploma<br>
@@ -176,27 +201,26 @@
         <a href="img/transcript1_NU.jpg"> Academic Link Part 1</a> <a href="img/transcript2_NU.jpg"> Academic Link Part 2</a>
       </p>
 
-  </section>
+    </section>
 
-<!-- END OF EDUCATION -->
+    <!-- END OF EDUCATION -->
 
-  <section class="contact">
-    <h2>Contact me</h2>
-    <p>
+    <section class="contact">
+      <h2>Contact me</h2>
+      <p>
         Phone:647 709 2915 <br>
         Email: Albert4industry@gmail.com
-    </p>
-  </section>
+      </p>
+    </section>
 
-<!-- END OF CONTACT -->
-  <footer>
+    <!-- END OF CONTACT -->
+    <footer>
 
-  </footer>
+    </footer>
 
-</div><!-- container-->
+  </div><!-- container-->
 
-<script src="js/jquery.slim.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
