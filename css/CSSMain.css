@@ -9,8 +9,17 @@ body{
 }
 
 /*---header---*/
+
 #boxAnimation{
-  margin-top:50px;position:relative;color:black; width:100%;background-color:#f4f8fb; height: 500px;
+  margin-top:50px;
+  position:relative;
+  width:100%;
+  background-color:#242627;
+  height: 75vh;
+}
+
+#boxAnimation h2{
+  margin-top:80px;
 }
 
 
@@ -27,3 +36,23 @@ body{
 
 /*  Something
 ----------------------*/
+
+
+.wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1px;
+  height: 50vh;
+}
+
+.el {
+  position: absolute;
+  opacity: 1;
+  width: 2px;
+  height: 12vh;
+  margin:0 auto;
+  transform-origin: 50% 100%;
+  background: white;
+}
