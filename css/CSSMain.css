@@ -1,6 +1,11 @@
+html{
+  scroll-behavior: smooth;
+}
+
 /*---body---*/
 body{
   background-color: #41474c;
+  min-width:320px;
 }
 .container-fluid{
   color:white;
@@ -11,13 +16,19 @@ body{
 /*---header---*/
 
 #boxAnimation{
-  margin-top:50px;
+  border:2px solid black;
+  margin-top:100px;
+  margin-bottom:25px;
   position:relative;
   width:100%;
   background-color:#242627;
+  min-height:500px;
   height: 75vh;
+  text-align: center;
 }
-
+#boxAnimation h1{
+  padding-top:25px;
+}
 #boxAnimation h2{
   margin-top:80px;
 }
@@ -55,4 +66,32 @@ body{
   margin:0 auto;
   transform-origin: 50% 100%;
   background: white;
+}
+
+
+.hello {
+
+  width: 500px;
+  display: inline-block;
+  transform: translateY(200px);
+
+}
+.bar {
+  background: #FFFFFF;
+  width: 10px;
+  height: 100px;
+}
+.bar1 {
+  float: left;
+}
+.bar2 {
+  float: right;
+}
+.ball {
+  background: #FFFFFF;
+  width: 10px;
+  height: 10px;
+  position: relative;
+  top: 45px;
+  left: 10px;
 }
