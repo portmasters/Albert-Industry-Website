@@ -1,0 +1,84 @@
+html{
+  scroll-behavior: smooth;
+}
+
+/*---body---*/
+body{
+  min-width:320px;
+  background-color:#ffffff;
+}
+
+
+
+/*---nav---*/
+nav{
+  border-top:1px solid black;
+  border-bottom:1px solid black;
+  margin-top: 20px;
+}
+
+/*---Carousel---*/
+.carousel{
+  margin-top:25px;
+}
+
+.carouselControl{
+  background:rgba(130, 111, 122, 0.3);
+}
+.carouselControl{
+  width:40px;
+}
+/*This will stop the images from "bouncing"*/
+.gallery_items{
+  width: auto;
+  height: 275px;
+  max-height: 275px;
+}
+
+
+/*---Picture Gallery--->*/
+#picture_gallery h2{
+  margin-bottom:25px;
+}
+#picture_gallery img{
+  margin:0px;
+  margin-bottom:25px;
+  padding:1px;
+  border:1px solid black;
+
+  width:320px;
+
+}
+
+
+
+
+/*---TYPOGRAPHY---*/
+aside h2{
+  border:none;
+  text-align: center;
+}
+
+h2{
+  border-top:1px solid black;
+  border-bottom:1px solid black;
+  margin-top: 20px;
+}
+
+/*-=-Medium Screen and up---*/
+
+@media (min-width:769px){
+  /*---Carousel---*/
+  .carousel{
+    max-width:740px;
+  }
+  .carouselControl{
+    width:60px;
+  }
+  .gallery_items{
+    width: auto;
+    height: 400px;
+    max-height: 400px;
+  }
+
+}
