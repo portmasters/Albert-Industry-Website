@@ -12,11 +12,24 @@ body{
   background-color:#484e54;
 
 }
+/*offsets headings for sticky nav*/
+#bio:before, #projects:before, #education:before{
+  display:block;
+  content:"";
+  margin-top:-60px;
+  height:60px;
+  visibility: hidden;
+}
+/*---nav---*/
+nav{
+
+}
+
+
 
 /*---header---*/
 
 #boxAnimation{
-  border:2px solid black;
   margin-top:100px;
   margin-bottom:25px;
   position:relative;
@@ -34,13 +47,10 @@ body{
 }
 
 
-/*  Navigation
-----------------------*/
-/*style*/
 
 
-/*  Projects
-----------------------*/
+
+/*---Projects---*/
 .card{
   margin-bottom: 25px;
 }
@@ -52,10 +62,21 @@ body{
     object-fit: cover;
 }
 
-/*  Something
-----------------------*/
 
 
+/*---Footer---*/
+footer{
+  text-align:center;
+}
+.fa-github{
+  color:rgba(255,255,255,.5);
+}
+
+.fa-github:hover{
+  color:rgba(255,255,255,.75);
+}
+
+/*---Animation---*/
 .wrapper {
   position: relative;
   display: flex;
